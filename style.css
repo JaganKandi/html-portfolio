@@ -1,0 +1,537 @@
+
+
+body{
+    background-color: #f3f3f3;
+    margin: 20px;
+    
+}
+
+
+.color-circle-nav{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.color-circle-nav-resume{
+    background-color: #FF605C;
+}
+
+.color-circle-nav-projects{
+    background-color: #FFBD44;
+}
+.color-circle-nav-contact{
+    background-color: #00CA4E;
+}
+
+.navbar-toggler{
+    width: 50px !important;
+    height: 50px !important;
+    padding: 10px;
+}
+
+.nav-link, p{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.selected{
+    font-weight: bold;
+}
+
+
+.selected-home{
+    color: black;
+}
+
+.selected-resume:hover{
+    color: #FF605C;
+}
+
+.selected-resume{
+    color: #FF605C;
+}
+
+.selected-projects:hover{
+    color: #FFBD44;
+}
+
+.selected-projects{
+    color: #FFBD44;
+}
+
+.selected-contact:hover{
+    color: #00CA4E;
+}
+.selected-contact{
+    color: #00CA4E;
+}
+
+
+.name-text{
+    font-size: 22px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.profile-img{
+    position: relative;
+    height: 480px;
+    width: 480px;
+    animation-name: profile-img;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    
+}
+nav > div > div > div{
+
+    margin-left: auto;
+ 
+}
+.content1{
+    position: relative;
+    margin-left: 100px;
+    animation: content-div 1s ease;
+}
+h1{
+    font-size: 100px;
+    margin-left: -8px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h3{
+    
+    font-size: 22px;
+   
+    font-family: 'Work Sans', sans-serif;
+}
+.aboutMe{
+    height: 75px;
+    width: 400px;
+}
+
+.three_buttons{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 80px;
+    min-width: 480px;
+   
+    animation: button-cont 1s ease; 
+}
+.button{
+    text-align: center;
+    padding: 56px;
+    padding-left: 40px;
+    display: inline-block;
+    color: black;
+    border-radius: 50%;
+    list-style-type: none;
+    text-decoration: none;
+    border: 0.5px solid black;
+    height: 140px;
+    width: 140px;
+    margin: 7px;
+    /*transition: all 1s ease;*/
+}
+
+.button:hover{
+    background-color: transparent;
+    
+    transition: all .3s ease;
+ 
+}
+
+.btn1{
+    position: relative;
+    background-color: #FF605C;
+    animation: button-cont1 .5s ease;
+}
+
+.btn2{
+    position: relative;
+    background-color: #FFBD44;
+    animation: button-cont2 .8s ease;
+}
+
+.btn3{
+    position: relative;
+    background-color: #00CA4E;
+    animation: button-cont3 1s ease;
+}
+.linkedin, .twitter, .phone-main, .phone, .git-hub{
+    fill: black;
+}
+.linkedin, .twitter, .git-hub{
+    margin-right: 10px;
+}
+h6{
+    font-size: 18px;
+   
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Animations */
+
+@keyframes profile-img{
+    0% {left: -200px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+@keyframes content-div{
+    0% {left: 200px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+@keyframes button-cont1{
+    0% {left: 0px; top: 70px;}
+    100% {left: 0px; top: 0px;}
+}
+@keyframes button-cont2{
+    0% {left: 0px; top: 70px;}
+    100% {left: 0px; top: 0px;}
+}
+@keyframes button-cont3{
+    0% {left: 0px; top: 70px;}
+    100% {left: 0px; top: 0px;}
+}
+
+
+
+/* Resume */
+
+h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 26px;
+}
+h4{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+.page-heading{
+    font-size: 42px;
+}
+
+.skills-container-grid, .work-experience-container-grid{
+    display: grid;
+    grid-template: 1fr/ minmax(300px,auto) 200px minmax(400px,700px);
+    position: relative;
+    /*animation: skills-anim 1s ease;*/
+}
+.skills-container-grid{
+    
+}
+.skills{
+    display: grid;
+    grid-area: 1/3/1/3;
+}
+
+.skills-heading, .work-ex-heading, .education-heading{
+    position: relative;
+    animation: resume-heads-anim 1s ease;
+}
+
+
+.education-container-grid{
+    display: grid;
+    grid-template: 1fr 1fr/ minmax(300px,auto) 200px minmax(400px,700px);
+    position: relative;
+    /*animation: skills-anim 1s ease;*/
+
+}
+.skills, .work-head-body, .degree1, .degree2{
+    position: relative;
+    animation: description-anim 1s ease;
+    
+}
+.degree1{
+    display: grid;
+    grid-area: 1/3/1/3;
+}
+.degree2{
+    
+    grid-area: 2/3/2/3;
+}
+.date-btech{
+    display: grid;
+    grid-area: 2/2/2/2;
+}
+.resume-hr{
+    position: relative;
+    left: -16px;
+}
+li{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.date, .date-btech{
+    
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-fill-mode: forwards;
+}
+
+.resume-hr, .project-hr{
+    position: relative;
+    animation: hr-line 4s ease;
+}
+/* resume animations */
+@keyframes resume-heads-anim {
+    0%{left: -300px; top: 0px;}
+    100%{left: 0px; top: 0px;}
+}
+
+@keyframes description-anim {
+    0%{left: 300px; top: 0px;}
+    100%{left: 0px; top: 0px;}
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+
+@keyframes hr-line {
+    0%{left: -1100px; top: 0px;}
+    100%{left: 0px; top: 0px;}
+}
+
+
+/* Projects */
+
+.project1-grid{
+    display: grid;
+    grid-template: 1fr / minmax(420px,800px) auto;
+    gap: 20px;
+    
+}
+.project2-grid{
+    display: grid;
+    grid-template: 1fr / auto minmax(420px,800px);
+    gap: 20px;
+    
+}
+.hw-carousel{
+    margin-left: auto;
+    height: 250px ;
+    width: 480px ;
+    position: relative;
+    animation: carousel-anim 1s ease;
+    
+}
+.project1-content{
+    position: relative;
+    animation: project1-content-anim 1s ease;
+}
+.project2-content{
+    position: relative;
+    animation: project2-content-anim 1s ease;
+}
+.hw-carousel2{
+    margin-right: auto;
+    margin-left: 0px;
+    position: relative;
+    animation: carousel2-anim 1s ease;
+    
+}
+
+.c-img{
+    height: 250px;
+    width: 480px;
+}
+
+/* Projects animation   */
+@keyframes project1-content-anim{
+    0%{left: -300px; top: 0px;}
+    100%{left: 0px; top: 0px;}
+}
+@keyframes project2-content-anim{
+    0%{left: 300px; top: 0px;}
+    100%{left: 0px; top: 0px;}
+}
+@keyframes carousel-anim {
+    0%{left: 300px; top: 0px;}
+    100%{left: 0px; top: 0px;}
+}
+@keyframes carousel2-anim {
+    0%{left: -300px; top: 0px;}
+    100%{left: 0px; top: 0px;}
+}
+
+/* Contact */
+.first-name-cont, .last-name-cont{
+    
+}
+input{
+    border: 1px solid black;
+    background-color: transparent;
+    width: 215px;
+    height: 50px;
+}
+
+.contact-margin{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+textarea{
+    border: 1px solid black;
+    background-color: transparent;
+}
+.submit-btn{
+    animation: none;
+    position: relative;
+    
+    animation: submit-button-animation-large 2s ease;
+    animation-fill-mode: forwards;
+    
+
+}
+.submit-btn{
+    
+}
+
+/*contact animation*/
+@keyframes submit-button-animation-large{
+    0%{left: -900px;
+        top: -20px;}
+    50%{left: -450px;
+        top: 90px;}
+    100%{left: 0px; top: -60px;}
+}
+@keyframes submit-button-animation-small{
+    0%{top: -700px;
+        left: 280px;}
+    
+    100%{left: 0px; top: 10px;}
+}
+
+/* index media queries */
+@media (max-width: 450px){
+    .content1{
+        margin: 0px;
+        
+        margin-bottom: 40px;
+        text-align: none;
+    }
+    .aboutMe{
+        width: auto;
+        
+    }
+    .three_buttons{
+        margin: 0px;
+        margin-top: 100px;
+        width: auto;
+        margin-left: -20px;
+    }
+    .button{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 0px;
+        padding-top: 35px;    
+    
+    
+    }
+    .profile-img{
+        width: 300px;
+        height: 300px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .phone, .Email, .socilamedia, .copyright{
+        margin-top: 20px;
+    }
+}
+@media (min-width: 451px) and (max-width: 768px){
+    
+    .content1{
+        margin: 0px;
+        
+        margin-bottom: 40px;
+        text-align: none;
+    }
+    .aboutMe{
+        width: auto;
+        
+    }
+    .three_buttons{
+        margin: 0px;
+        margin-top: 100px;
+        width: auto;
+    }
+    .button{
+        
+    }
+    .profile-img{
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .phone, .Email, .socilamedia, .copyright{
+        margin-top: 20px;
+    }
+}
+
+/* resume media query */
+
+@media (max-width: 768px){
+    .education-container-grid, .skills-container-grid, .work-experience-container-grid{
+        display: block;
+    }
+    .skills, .works, .date{
+        margin-top: 20px;
+    }
+    .works-text-box, .works-heading{
+        position: relative;
+        left: -7px;
+    }
+    .degree1, .degree2, .gpa{
+        margin-top: -15px;
+    }
+    
+}
+
+/* projects media query */
+
+@media (max-width: 768px){
+    .project1-grid , .project2-grid{
+        display: block;
+        
+    }
+
+    .hw-carousel{
+        
+        width: auto;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .many-more-projects{
+        margin-top: 30px;
+    }
+}
+
+/* contact media query */
+
+@media  (max-width: 768px){
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+
+    .button{
+        
+    }
+    .submit-btn{
+        position: none;
+        position: relative;
+        top: -700px;
+        left: 280px;
+        animation: none;
+        padding: 0px;
+        animation: submit-button-animation-small 2s ease;
+        animation-fill-mode: forwards; 
+    }
+    .email{
+        margin-bottom: 15px;
+    }
+}
+
